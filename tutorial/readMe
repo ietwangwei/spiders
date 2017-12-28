@@ -1,0 +1,23 @@
+Scrapy爬虫步骤:
+python3 
+1.配置环境变量
+2.cmd 下运行 $python -version 出现版本号
+3.安装pip 以便于使用pip工具来管理package
+4.安装 Scrapy $pip install Scrapy 成功会有提示安装成功
+5.scrapy startproject project_name 创建一个新的Scrapy项目
+  	项目结构如下:
+		tutorial/ 项目名称
+		    scrapy.cfg 项目配置文件
+		    tutorial/ 代码模块
+		        __init__.py
+		        items.py
+		        pipelines.py
+		        settings.py
+		        spiders/ 爬虫目录
+		            __init__.py
+		            ...
+	在tutorial/spiders下面添加爬虫文件 JdSpiders.py 具体实例看相应文件有注释
+6.$ scrapy crawl jd(爬虫文件的name) -o result.json 来生成result.json文件就是爬取的结果
+技术要求:xpath/selection选择器  等技能
+
+
